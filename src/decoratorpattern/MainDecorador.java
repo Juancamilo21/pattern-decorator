@@ -5,21 +5,21 @@ import java.util.ArrayList;
 public class MainDecorador {
 
     public static void main(String[] args) {
-        ArrayList<Integer> numeros = new ArrayList<>();
-        numeros.add(3);
-        numeros.add(5);
-        numeros.add(7);
-        numeros.add(9);
+        ArrayList<Integer> listaNumeros = new ArrayList<>();
+        listaNumeros.add(3);
+        listaNumeros.add(5);
+        listaNumeros.add(7);
+        listaNumeros.add(9);
 
         NumerosEnteros sumaNumeros = new SumaDecorador(new ListarNumeros());
-        sumaNumeros.mostrarNumeros(numeros);
+        sumaNumeros.mostrarNumeros(listaNumeros);
 
         System.out.println("------------------------------------------");
 
         NumerosEnteros multiplicacionNumeros = new MultiplicacionDecorador(
                 new ListarNumeros()
         );
-        multiplicacionNumeros.mostrarNumeros(numeros);
+        multiplicacionNumeros.mostrarNumeros(listaNumeros);
 
         System.out.println("------------------------------------------");
 
@@ -27,7 +27,7 @@ public class MainDecorador {
                 new MultiplicacionDecorador(new ListarNumeros())
         );
 
-        sumaMultiplicacionNumeros.mostrarNumeros(numeros);
+        sumaMultiplicacionNumeros.mostrarNumeros(listaNumeros);
     }
 
 }

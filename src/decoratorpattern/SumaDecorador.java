@@ -20,15 +20,15 @@ public class SumaDecorador extends NumerosDecorador {
         return listaNumeros.get(indice) + sumaNumeros(listaNumeros, indice + 1);
     }
 
-    public double promedioNumeros(ArrayList<Integer> listaNumeros, Integer suma) {
+    public double promedioNumeros(ArrayList<Integer> listaNumeros, int suma) {
         return (listaNumeros.size() > 0) ? (double) suma / listaNumeros.size() : 0;
     }
 
     public void ejecutarContenido(ArrayList<Integer> listaNumeros) {
-        int suma = sumaNumeros(listaNumeros, 0);
-        System.out.println("La suma de los numeros es:\t" + suma);
+        int resultadoSuma = sumaNumeros(listaNumeros, 0);
+        System.out.println("La suma de los numeros es:\t" + resultadoSuma);
         System.out.println(
-                "El promedio de la suma es:\t" + promedioNumeros(listaNumeros, suma)
+                "El promedio de la suma es:\t" + promedioNumeros(listaNumeros, resultadoSuma)
         );
     }
 }

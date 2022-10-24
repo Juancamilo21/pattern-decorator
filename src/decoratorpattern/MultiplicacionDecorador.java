@@ -29,8 +29,8 @@ public class MultiplicacionDecorador extends NumerosDecorador {
     }
 
     public void ejecutarContenido(ArrayList<Integer> listaNumeros) {
-        int multiplicacion = multiplicarNumeros(listaNumeros, 0);
-        System.out.println("Multiplicando numeros:\t" + multiplicacion);
-        verificarNumeroPar(multiplicacion);
+        int resultadoMultiplicacion = multiplicarNumeros(listaNumeros, 0);
+        System.out.println("Multiplicando numeros:\t" + resultadoMultiplicacion);
+        verificarNumeroPar(resultadoMultiplicacion);
     }
 }
