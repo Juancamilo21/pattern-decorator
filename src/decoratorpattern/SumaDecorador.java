@@ -11,7 +11,7 @@ public class SumaDecorador extends NumerosDecorador {
 
     @Override
     public void mostrarNumeros(ArrayList<Integer> listaNumeros) {
-        super.mostrarNumeros(listaNumeros);
+        numerosDecorados.mostrarNumeros(listaNumeros);
         ejecutarContenido(listaNumeros);
     }
 

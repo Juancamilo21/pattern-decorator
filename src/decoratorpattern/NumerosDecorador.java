@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public abstract class NumerosDecorador implements NumerosEnteros {
 
-    protected NumerosEnteros numerosEnteros;
+    protected NumerosEnteros numerosDecorados;
 
-    public NumerosDecorador(NumerosEnteros numerosEnteros) {
-        this.numerosEnteros = numerosEnteros;
+    public NumerosDecorador(NumerosEnteros numerosDecorados) {
+        this.numerosDecorados = numerosDecorados;
     }
 
     @Override
     public void mostrarNumeros(ArrayList<Integer> listaNumeros) {
-        numerosEnteros.mostrarNumeros(listaNumeros);
+        numerosDecorados.mostrarNumeros(listaNumeros);
     }
 }
