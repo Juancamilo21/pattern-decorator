@@ -2,11 +2,11 @@ package decoratorpattern;
 
 import java.util.ArrayList;
 
-public abstract class NumerosDecorador implements NumerosEnteros {
+public abstract class NumerosDecorador implements INumerosEnteros {
 
-    protected NumerosEnteros numerosDecorados;
+    protected INumerosEnteros numerosDecorados;
 
-    public NumerosDecorador(NumerosEnteros numerosDecorados) {
+    public NumerosDecorador(INumerosEnteros numerosDecorados) {
         this.numerosDecorados = numerosDecorados;
     }
 

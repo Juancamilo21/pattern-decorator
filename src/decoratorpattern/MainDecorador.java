@@ -15,19 +15,19 @@ public class MainDecorador {
             listaNumeros.add(i, numero);
         }
 
-        NumerosEnteros sumaNumeros = new SumaDecorador(new ListarNumeros());
+        INumerosEnteros sumaNumeros = new SumaDecorador(new ListarNumeros());
         sumaNumeros.mostrarNumeros(listaNumeros);
 
         System.out.println("------------------------------------------");
 
-        NumerosEnteros multiplicacionNumeros = new MultiplicacionDecorador(
+        INumerosEnteros multiplicacionNumeros = new MultiplicacionDecorador(
                 new ListarNumeros()
         );
         multiplicacionNumeros.mostrarNumeros(listaNumeros);
 
         System.out.println("------------------------------------------");
 
-        NumerosEnteros sumaMultiplicacionNumeros = new SumaDecorador(
+        INumerosEnteros sumaMultiplicacionNumeros = new SumaDecorador(
                 new MultiplicacionDecorador(new ListarNumeros())
         );
 

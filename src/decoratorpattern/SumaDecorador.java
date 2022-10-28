@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SumaDecorador extends NumerosDecorador {
 
 
-    public SumaDecorador(NumerosEnteros numerosEnteros) {
+    public SumaDecorador(INumerosEnteros numerosEnteros) {
         super(numerosEnteros);
     }
 

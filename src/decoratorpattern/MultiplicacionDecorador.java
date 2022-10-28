@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MultiplicacionDecorador extends NumerosDecorador {
 
 
-    public MultiplicacionDecorador(NumerosEnteros numerosEnteros) {
+    public MultiplicacionDecorador(INumerosEnteros numerosEnteros) {
         super(numerosEnteros);
     }
 

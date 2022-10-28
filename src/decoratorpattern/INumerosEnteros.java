@@ -2,6 +2,6 @@ package decoratorpattern;
 
 import java.util.ArrayList;
 
-public interface NumerosEnteros {
+public interface INumerosEnteros {
     void mostrarNumeros(ArrayList<Integer> listaNumeros);
 }
